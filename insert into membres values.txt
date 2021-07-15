@@ -1,0 +1,29 @@
+
+insert into Membre values(
+    1, 
+    'Duchampt',
+    'Jean-luc', 
+	'jl@duchampt.com',
+    1, 
+    '01/01/1950 00:00:00', 
+    hextoraw('453d7a34'), 
+    '236, ter', 
+    'rue de la gantière',
+    '63100',
+    'Clermont-Ferrand',
+    'FR',
+	'Duchamptjl',
+	'Duchamptjl');
+
+
+
+insert into Membre values(2, 'Ergot','Françoise','ergot.f@free.fr', 1, '01/01/1952 00:00:00', hextoraw('453d7a34') ,'2', 'rue de l''hôtel de ville','63100', 'Clermont-Ferrand', 'FR','ergotf', 'ergotf');
+insert into Membre values(3, 'Dubois','Alain','Alain.Dubois9988@gmail.com', 0, '01/01/1953 00:00:00', hextoraw('453d7a34') ,'3, ter', 'rue des amandiers','12100', 'Millau', 'FR','Duboisa', 'Duboisa');
+insert into Membre values(4, 'Dupont', 'Amandine','Amandine.Dupont@mail.ru', 0, '01/01/1954 00:00:00', hextoraw('453d7a34') ,'3, ter', 'rue de la coupole','12100', 'Millau', 'FR','Duponta', 'Duponta');
+insert into Membre values(5, 'Arnaud', 'Rémi','Remi.Arnaud9966@yahoo.fr', 1, '01/01/1955 00:00:00', hextoraw('453d7a34'), '25', 'rue des cerisiers','12100', 'Millau', 'FR','Arnaudr', 'Arnaudr');
+insert into Membre values(6,'Marquet','Françoise','Francoisedsmarquet@laposte.fr',1,'01/01/1956 00:00:00',hextoraw('453d7a34'),'30', 'rue des renards','12100', 'Millau', 'FR', 'Marquetf', 'Marquetf');
+insert into Membre values(7, 'Antonini', 'Florence','Florence.Antonini@gmx.de',0,'01/01/1957 00:00:00', hextoraw('453d7a34'),'40', 'rue des bégonias','12100','Millau','FR','Antoninif', 'Antoninif');
+insert into Membre values(8, 'Leroy','Jean-François','LeroyJF@yahoo.fr',0,'01/01/1958 00:00:00', hextoraw('453d7a34'),'45', 'rue des tilleuls','12100','Millau','FR', 'Leroyjf', 'Leroyjf');
+insert into Membre values(9,'Desmartins', 'Jean-Luc','DesmartinsJL@gmail.com', 0, '01/01/1959 00:00:00', hextoraw('453d7a34'),'57', 'rue des pêchers', '12100','Millau','FR', 'Desmartinsjl', 'Desmartinsjl');
+insert into Membre values(10,'Desjardins','Sylvie','Desjardins.Sylvie01@orange.fr',0,'01/01/1960 00:00:00',hextoraw('453d7a34'),'52','Avenue de la République','12100','Millau','FR','Desjardinss', 'Desjardinss');
+insert into Membre values(11,'Ayrald','Etienne','Ayrald5601Etienne@yahoo.fr',0,'01/01/1961 00:00:00', hextoraw('453d7a34'), '63', 'rue de l''eaubonne', '12100', 'Millau', 'FR','AyraldE', 'AyraldE');

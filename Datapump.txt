@@ -1,0 +1,14 @@
+Pour exporter une db 
+En ligne de commande faire : 
+
+expdp cda5PANI_PROJ/cda5PANI_PROJ@oradev DIRECTORY=savbase_cda5 dumpfile=2021-07-15-cda5PANI_proj.dmp logfile=cda5PANI_proj.log SCHEMAS=cda5pani_proj
+
+
+
+Et aller chercher le fichier créé sur : 
+
+https://amio-my.sharepoint.com/personal/credo_adm_2isa_net/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fcredo%5Fadm%5F2isa%5Fnet%2FDocuments%2FSAV%5FDATA%5FCDA05&ct=1626333157046&or=OWA%2DNT&cid=41280d38%2D3073%2D5036%2Dbd7c%2Dd1df1e5bbfdf&originalPath=aHR0cHM6Ly9hbWlvLW15LnNoYXJlcG9pbnQuY29tLzpmOi9nL3BlcnNvbmFsL2NyZWRvX2FkbV8yaXNhX25ldC9Fckg0c1gtcjVBQk5pM2xaajZVdWVCWUI1d1dRSmtuMHR3dExZLUdHNGJUUTNnP3J0aW1lPWJuVC03RjlIMlVn
+
+pour réimporter une db, même ligne de commande mais on change le début par impdp :
+
+impdp cda5PANI_PROJ/cda5PANI_PROJ@oradev DIRECTORY=savbase_cda5 dumpfile=2021-07-15-cda5PANI_proj.dmp logfile=cda5PANI_proj.log SCHEMAS=cda5pani_proj
