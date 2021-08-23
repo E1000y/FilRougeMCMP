@@ -51,6 +51,38 @@ select * from participer p right join activite a on p.id_activite = a.id_activit
 --afficher toutes les activités avec le nombre de participants adhérents et le nombre de participants invités. 
 --Les trier par audience décroissante.
 
+select a.nom_activite, count(p.id_membre), sum(p.nombre_invites) 
+from activite a join participer p 
+on a.id_activite=p.id_activite
+join saison s on a.date_activite 
+between s.date_debut_saison and s.date_fin_saison
+where sysdate between s.date_debut_saison and s.date_fin_saison
+group by a.nom_activite
+order by count(p.id_membre) + sum(p.nombre_invites) desc ;
+
+
+select * from activite a 
+join saison s on a.date_activite 
+between s.date_debut_saison and s.date_fin_saison
+and sysdate between s.date_debut_saison and s.date_fin_saison;
+
+group by a.nom_activite ;
+
+
+----requêtes de test pour élaborer la requête ci-dessus
+SELECT a.nom_activite, p.id_membre, p.nombre_invites from activite a join participer p on a.id_activite = p.id_activite;
+
+select a.nom_activite, count(p.id_membre), sum(p.nombre_invites) from activite a join participer p on a.id_activite=p.id_activite
+group by a.nom_activite ;
+
+
+SELECT a.id_activite, a.id_membre, sum(p.nombre_invites) 
+from activite a join participer p 
+on a.id_activite = p.id_activite
+group by a.id_activite, a.id_membre;
+
+
+
 --1)récupérer la saison
 select id_saison from saison where sysdate > date_debut_saison and sysdate < date_fin_saison;
 --2)récupérer les activités avec le nombre de participants.
@@ -79,7 +111,7 @@ rollback;
 select * from activite where photo_activite is null and date_activite<sysdate;
 
 --Afficher le nombre de nouvelles par type de destinataire(public ou adhérent)
-
+select count(*), isnouvelleadherents from publication group by isnouvelleadherents;
 
 
 

@@ -1,7 +1,0 @@
-insert into photo values(1,hextoraw('FFFFFF'), '01/01/2021',1,1);
-insert into photo values(2,hextoraw('FFFFFF'), '01/01/2021',1,5);
-insert into photo values(3,hextoraw('FFFFFF'), '01/01/2021',1,10);
-insert into photo values(4,hextoraw('FFFFFF'), '01/01/2021',2,2);
-insert into photo values(5,hextoraw('FFFFFF'), '01/01/2021',2,1);
-insert into photo values(6,hextoraw('FFFFFF'), '01/01/2021',3,10);
-insert into photo values(7,hextoraw('FFFFFF'), '01/01/2021',4,9);

@@ -1,5 +1,0 @@
-insert into publication values(1,'Nouvelles sur la sortie A',0,'Pour la sortie A nous allons jusque dans le puy-de-dôme déjeuner à la Bergerie de Sarpoil...', hextoraw('00000000'),1);
-insert into publication values(2,'Nouvelles sur la sortie B',0,'Pour la sortie B nous allons jusque dans...', hextoraw('00000000'),3);
-insert into publication values(3,'Nouvelles sur la sortie C',0,'Pour la sortie C nous allons à ...', hextoraw('00000000'),5);
-insert into publication values(4,'Nouvelles sur la sortie D',0,'Pour la sortie D ...', hextoraw('00000000'),1);
-insert into publication values(5,'Promotion sur les gants',1,'Super promotion : 60% de remise sur une paire de gants...', hextoraw('00000000'),1);

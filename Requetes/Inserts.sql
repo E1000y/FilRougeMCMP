@@ -33,27 +33,34 @@ insert into Membre values(11,'Ayrald','Etienne','Ayrald5601Etienne@yahoo.fr',0,'
 insert into Membre values(12, 'Milham','Ed',null,0,'01/01/1962 00:00:00', hextoraw('453d7a34'),'12 ter', 'rue de Birmingham', '12100', 'Millau', 'FR', 'Milhame', 'Milhame',null);
 insert into Membre values(13, 'Tate','Jessica', null, 0, '01/01/1963', hextoraw('FFFFFFFF'), '11', 'rue des Rosiers', '12100', 'Millau','FR','Tatej','Tatej',null); 
 
+
+
 commit;
 
 insert into activite values(
 			1,
-			'Sortie A', 
-			'ceci est la description de la sortie A',
-			'A',
-			'Point GPS A',
-			'01/01/2021 00:00:00', 
+			'Sortie St Affrique', 
+			'Nous allons profiter d''une visite guidée sur St Affrique',
+			'St Affrique',
+			'43.956467, 2.886151',
+			'01/01/2021 14:00:00', 
 			7.50,
 			15.0,
 			'motos',
 			hextoraw('453d7a34'),
-			1
+			1,
+            1
 			);
-insert into activite values(2,'Sortie B', 'ceci est la description de la sortie B','B','Point GPS B','01/02/21 00:00:00', 7.50,15.0,'cyclos',hextoraw('453d7a34'),2);
-insert into activite values(3,'Sortie C', 'ceci est la description de la sortie C','C','Point GPS C','01/08/21 00:00:00', 7.50,15.0,'solex',hextoraw('453d7a34'),5);
-insert into activite values(4,'Sortie D', 'ceci est la description de la sortie D','D','Point GPS D','01/09/21 00:00:00', 7.50,15.0,'motos',hextoraw('453d7a34'),1);
-insert into activite values(5,'Sortie E', 'ceci est la description de la sortie E','E','Point GPS E','02/09/21 00:00:00', 7.50,15.0,'motos',hextoraw('453d7a34'),1);
-insert into activite values(6,'Sortie F', 'ceci est la description de la sortie F','F','Point GPS F','01/01/22 00:00:00',7.50, 15.0, 'motos', hextoraw('453d7a34'),1);
-insert into activite values(7,'Sortie G', 'ceci est la description de la sortie G','G','Point GPS G','01/01/20 00:00:00',7.50, 15.0, 'motos', NULL,1);
+insert into activite values(2,'Sortie Gorges du Tarn', 'Nous prenons nos pique-niques pour aller déjeuner sur les berges des Gorges du Tarn','Le Rozier','44.23110102520501, 3.2341998764807145','01/02/21 09:00:00', 7.50,15.0,'cyclos',null,2,3);
+insert into activite values(3,'Sortie Pique-Nique', 'Petite sortie Pique_Nique entre solex','St Eulalie de Cernon','43.98210119739532, 3.135594292419422','01/08/21 14:00:00', 7.50,15.0,'solex',hextoraw('453d7a34'),5,0.5);
+insert into activite values(4,'Sortie Aubrac', 'Nous allons déguster un aligot lors de notre sortie sur l''Aubrac','Saint-Chély-d''Aubrac','44.62218986967062, 2.986126784747497','01/08/21 09:00:00', 7.50,15.0,'motos',hextoraw('453d7a34'),1,0.5);
+insert into activite values(5,'Sortie Riom', 'Visite du Musée Baster de la moto','Riom','45.888977010866455, 3.134109884074008','02/09/21 14:00:00', 7.50,15.0,'motos',hextoraw('453d7a34'),1,1);
+insert into activite values(6,'Sortie Saint Flour', 'Sortie à Saint Flour, visite du musée de la Haute Auvergne','Saint Flour','45.0353652059122, 3.094313491350328','01/01/22 9:00:00',7.50, 15.0, 'motos', hextoraw('453d7a34'),1,2);
+insert into activite values(7,'Sortie Gard', 'Visite des arènes de Nîmes', 'Nîmes', '43.839998207525, 4.358637969933621','07/09/2022 12:00:00', 7.5, 15.0, 'motos', hextoraw('12345678'), 2, 4);
+insert into activite values(8,'Sortie Hautes Alpes', 'On prend un peu de hauteur et quelques virages pour aller profiter des paysages exceptionnels des Hautes Alpes','Parc National des Ecrins','44.837580563290544, 6.263786424031228','01/10/23 06:00:00',7.50, 15.0, 'motos', NULL, 12, 12);
+insert into activite values(9,'Sortie culinaire La Bergerie de Sarpoil', 'Nous allons dans le Puy-de-dôme profiter de la réouverture du restaurant étoilé la Bergerie de Sarpoil', 'Sarpoil', '45.49592424301164, 3.352362651921677', '01/12/21 11:00:00', 7.50, 15, 'motos', hextoraw('12345678'), 1,4);
+
+
 
 insert into photo values(1,hextoraw('FFFFFF'), '01/01/2021',1,1);
 insert into photo values(2,hextoraw('FFFFFF'), '01/01/2021',1,5);
@@ -70,11 +77,11 @@ insert into saison values(2,'01/09/2020 00:00:00','31/08/2021 00:00:00');
 insert into saison values(3,'01/09/2021 00:00:00','31/08/2022 00:00:00');
 
 
-insert into publication values(1,'Nouvelles sur la sortie A',0,'Pour la sortie A nous allons jusque dans le puy-de-dôme déjeuner à la Bergerie de Sarpoil...', hextoraw('00000000'),1,1);
-insert into publication values(2,'Nouvelles sur la sortie B',0,'Pour la sortie B nous allons jusque dans...', hextoraw('00000000'),0,3);
-insert into publication values(3,'Nouvelles sur la sortie C',0,'Pour la sortie C nous allons à ...', hextoraw('00000000'),1,5);
-insert into publication values(4,'Nouvelles sur la sortie D',0,'Pour la sortie D ...', hextoraw('00000000'),1,1);
-insert into publication values(5,'Promotion sur les gants',1,'Super promotion : 60% de remise sur une paire de gants...', hextoraw('00000000'),1,1);
+insert into publication values(1,'Nouvelles sur la sortie Bergerie de Sarpoil',0,'INSCRIPTION REQUISE pour le repas Nous allons jusque dans le puy-de-dôme déjeuner à la Bergerie de Sarpoil...', hextoraw('00000000'),1,1,'01/02/2021 00:00:00');
+insert into publication values(2,'Nouvelles sur la sortie sur Saint Flour',0,'Veuillez contacter Michel pour un tarif préférentiel sur la visite du musée de la Haute Auvergne', hextoraw('00000000'),0,3,'01/03/2021 00:00:00');
+insert into publication values(3,'Nouvelles sur la sortie des Gorges du Tarn',0,'La météo s''annonce peu clémente, prévoyez les petites laines et les kways', hextoraw('00000000'),1,5,'01/04/2021 00:00:00');
+insert into publication values(4,'Nouvelles sur la sortie Hautes Alpes',0,'Nous prévoyons de partir tôt le matin...', hextoraw('00000000'),1,1,'01/05/2021 00:00:00');
+insert into publication values(5,'Promotion sur les gants',1,'Super promotion : 60% de remise sur une paire de gants...', hextoraw('00000000'),1,1,'01/06/2021 00:00:00');
 
 insert into participer values(1,1,'02/02/2021 00:00:00',2,'Jean Guillot et Jacques Camus');
 insert into participer values(2,1,'02/02/2021 00:00:00',0,'');
@@ -85,6 +92,8 @@ insert into participer values(7,1,'02/02/2021 00:00:00',0,'');
 insert into participer values(1,3,'02/02/2021 00:00:00',2,'Jean Guillot et Jacques Camus');
 insert into participer values(1,4,'02/02/2021 00:00:00',2,'Jean Guillot et Jacques Camus');
 insert into participer values(1,5,'02/02/2021 00:00:00',0,'');
+insert into participer values(3,1,'02/02/2021 00:00:00',0,'');
+insert into participer values(3,5,'02/02/2021 00:00:00',3,'Jérome Fourvière, Agnès Menut, et Jean-Jacques Fiouze');
 
 insert into cotiser values(1,1,1,'02/09/2019 00:00:00',120);
 insert into cotiser values(2,1,1,'02/09/2019 00:00:00',120);
@@ -97,7 +106,7 @@ insert into cotiser values(8,1,1,'02/09/2019 00:00:00',120);
 insert into cotiser values(9,1,1,'02/09/2019 00:00:00',120);
 insert into cotiser values(10,1,1,'02/09/2019 00:00:00',120);
 insert into cotiser values(11,1,1,'02/09/2019 00:00:00',120);
-insert into cotiser values(1,2,1,'02/09/2020 00:00:00',120);
+insert into cotiser values(1,2,0,null,120);
 insert into cotiser values(2,2,1,'02/09/2020 00:00:00',120);
 insert into cotiser values(3,2,1,'02/09/2020 00:00:00',120);
 insert into cotiser values(4,2,1,'02/09/2020 00:00:00',120);
@@ -107,6 +116,7 @@ insert into cotiser values(9,2,1,'02/09/2020 00:00:00',120);
 insert into cotiser values(11,2,1,'02/09/2020 00:00:00',120);
 insert into cotiser values(12,2,0,'02/09/2020 00:00:00',120);
 insert into cotiser values(13,2,0,'02/09/2020 00:00:00',120);
+
 
 UPDATE Membre SET NoTel = '(502) 873-2752' WHERE id_membre = 1;
 UPDATE Membre SET NoTel = '(261) 915-7516' WHERE id_membre = 2;

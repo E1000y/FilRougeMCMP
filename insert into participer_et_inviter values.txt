@@ -1,8 +1,0 @@
-insert into participer_et_inviter values(1,1,'02/02/2021 00:00:00',2,'Jean Guillot et Jacques Camus')
-insert into participer_et_inviter values(2,1,'02/02/2021 00:00:00',0,'');
-insert into participer_et_inviter values(4,1,'02/02/2021 00:00:00',1,'Philippe Lemaître');
-insert into participer_et_inviter values(5,1,'02/02/2021 00:00:00',0,'');
-insert into participer_et_inviter values(10,1,'02/02/2021 00:00:00',1,'Etienne Franck');
-insert into participer_et_inviter values(7,1,'02/02/2021 00:00:00',0,'');
-insert into participer_et_inviter values(1,3,'02/02/2021 00:00:00',2,'Jean Guillot et Jacques Camus');
-insert into participer_et_inviter values(1,4,'02/02/2021 00:00:00',2,'Jean Guillot et Jacques Camus');
