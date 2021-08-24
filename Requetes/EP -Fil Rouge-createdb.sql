@@ -2,11 +2,10 @@
 drop table activite cascade constraints;
 drop table cotiser cascade constraints;
 drop table membre cascade constraints;
-drop table participer_et_inviter cascade constraints;
+drop table participer cascade constraints;
 drop table photo cascade constraints;
 drop table publication cascade constraints;
 drop table saison cascade constraints;
-
 
 CREATE TABLE Membre(
    Id_Membre NUMBER(10),
@@ -39,6 +38,7 @@ CREATE TABLE Activite(
    Tarif_Invite NUMBER(7,2),
    Type_Vehicule VARCHAR2(50),
    Photo_Activite BLOB,
+   Duree_Activite NUMBER(5,2),
    Id_Membre NUMBER(10) NOT NULL,
    CONSTRAINT Activite_PK PRIMARY KEY(Id_Activite),
    CONSTRAINT Activite_Membre_FK FOREIGN KEY(Id_Membre) REFERENCES Membre(Id_Membre)
@@ -70,6 +70,7 @@ CREATE TABLE Publication(
    Fichier_Associe BLOB,
    IsNouvelleAdherents NUMBER(1),
    Id_Membre NUMBER(10) NOT NULL,
+   Date_Publi_Nouvelle TIMESTAMP,
    CONSTRAINT Publication_PK PRIMARY KEY(Id_Publication),
    CONSTRAINT Publication_Membre_FK FOREIGN KEY(Id_Membre) REFERENCES Membre(Id_Membre)
 );
@@ -78,12 +79,12 @@ CREATE TABLE Publication(
 CREATE TABLE Participer(
    Id_Membre NUMBER(10),
    Id_Activite NUMBER(10),
-   Date_Invitation TIMESTAMP,
+   Date_Inscription TIMESTAMP,
    Nombre_Invites NUMBER(10),
    Libelle_Invites VARCHAR2(500),
-   CONSTRAINT Participer_et_Inviter_PK PRIMARY KEY(Id_Membre, Id_Activite),
-   CONSTRAINT Participer_et_Inviter_Membre_FK FOREIGN KEY(Id_Membre) REFERENCES Membre(Id_Membre),
-   CONSTRAINT Participer_et_Inviter_Activite_FK FOREIGN KEY(Id_Activite) REFERENCES Activite(Id_Activite)
+   CONSTRAINT Participer_PK PRIMARY KEY(Id_Membre, Id_Activite),
+   CONSTRAINT Participer_Membre_FK FOREIGN KEY(Id_Membre) REFERENCES Membre(Id_Membre),
+   CONSTRAINT Participer_Activite_FK FOREIGN KEY(Id_Activite) REFERENCES Activite(Id_Activite)
 );
 
 CREATE TABLE Cotiser(
@@ -94,5 +95,4 @@ CREATE TABLE Cotiser(
    Montant_Cotisation NUMBER(5,2),
    CONSTRAINT Cotiser_PK PRIMARY KEY(Id_Membre, Id_Saison),
    CONSTRAINT Cotiser_Membre_FK FOREIGN KEY(Id_Membre) REFERENCES Membre(Id_Membre),
-   CONSTRAINT Cotiser_Saison_FK FOREIGN KEY(Id_Saison) REFERENCES Saison(Id_Saison)
-);
+   CONSTRAINT Cotiser_Saison_FK FOREIGN KEY(Id_Saison) REFERENCES Saison(Id_Saison));
