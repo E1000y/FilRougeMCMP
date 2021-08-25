@@ -58,7 +58,7 @@ insert into activite values(5,'Sortie Riom', 'Visite du Musée Baster de la moto'
 insert into activite values(6,'Sortie Saint Flour', 'Sortie à Saint Flour, visite du musée de la Haute Auvergne','Saint Flour','45.0353652059122, 3.094313491350328','01/01/22 9:00:00',7.50, 15.0, 'motos', hextoraw('453d7a34'),1,2);
 insert into activite values(7,'Sortie Gard', 'Visite des arènes de Nîmes', 'Nîmes', '43.839998207525, 4.358637969933621','07/09/2022 12:00:00', 7.5, 15.0, 'motos', hextoraw('12345678'), 2, 4);
 insert into activite values(8,'Sortie Hautes Alpes', 'On prend un peu de hauteur et quelques virages pour aller profiter des paysages exceptionnels des Hautes Alpes','Parc National des Ecrins','44.837580563290544, 6.263786424031228','01/10/23 06:00:00',7.50, 15.0, 'motos', NULL, 12, 12);
-insert into activite values(9,'Sortie culinaire La Bergerie de Sarpoil', 'Nous allons dans le Puy-de-dôme profiter de la réouverture du restaurant étoilé la Bergerie de Sarpoil', 'Sarpoil', '45.49592424301164, 3.352362651921677', '01/12/21 11:00:00', 7.50, 15, 'motos', hextoraw('12345678'), 1,4);
+insert into activite values(9,'Sortie culinaire La Bergerie de Sarpoil', 'Nous allons dans le Puy-de-dôme profiter de la réouverture du restaurant étoilé la Bergerie de Sarpoil', 'Sarpoil', '45.49592424301164, 3.352362651921677', '27/08/21 11:00:00', 7.50, 15, 'motos', hextoraw('12345678'), 1,4);
 
 
 
