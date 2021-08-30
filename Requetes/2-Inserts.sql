@@ -37,20 +37,7 @@ insert into Membre values(13, 'Tate','Jessica', null, 0, '01/01/1963', hextoraw(
 
 commit;
 
-insert into activite values(
-			1,
-			'Sortie St Affrique', 
-			'Nous allons profiter d''une visite guidée sur St Affrique',
-			'St Affrique',
-			'43.956467, 2.886151',
-			'01/01/2021 14:00:00', 
-			7.50,
-			15.0,
-			'motos',
-			hextoraw('453d7a34'),
-			1,
-            1
-			);
+insert into activite values(1,'Sortie St Affrique','Nous allons profiter d''une visite guidée sur St Affrique','St Affrique','43.956467, 2.886151','01/01/2021 14:00:00',7.50,15.0,'motos',hextoraw('453d7a34'),1,1);
 insert into activite values(2,'Sortie Gorges du Tarn', 'Nous prenons nos pique-niques pour aller déjeuner sur les berges des Gorges du Tarn','Le Rozier','44.23110102520501, 3.2341998764807145','01/02/21 09:00:00', 7.50,15.0,'cyclos',null,2,3);
 insert into activite values(3,'Sortie Pique-Nique', 'Petite sortie Pique_Nique entre solex','St Eulalie de Cernon','43.98210119739532, 3.135594292419422','01/08/21 14:00:00', 7.50,15.0,'solex',hextoraw('453d7a34'),5,0.5);
 insert into activite values(4,'Sortie Aubrac', 'Nous allons déguster un aligot lors de notre sortie sur l''Aubrac','Saint-Chély-d''Aubrac','44.62218986967062, 2.986126784747497','01/08/21 09:00:00', 7.50,15.0,'motos',hextoraw('453d7a34'),1,0.5);
