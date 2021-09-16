@@ -6,7 +6,7 @@ body {
   height: 100%;
 }
 
-#container {
+/* #container {
   min-height: 100%;
   min-height: 100vh;
   box-sizing: border-box;
@@ -14,7 +14,7 @@ body {
 
 #container::after {
   content: "";
-  background-image: url("./MCMP.png");
+  background-image: url("./MCMP-n&b.png");
   background-repeat: no-repeat;
   background-size: 700px;
   background-position: center center;
@@ -26,7 +26,7 @@ body {
   right: 0;
   position: fixed;
   z-index: -1;
-}
+} */
 
 header {
   background-color: #000;
@@ -90,10 +90,22 @@ header .icon{
         display:none;
     }
 
+    body div header nav.responsive ul {
+      display:flex;
+      flex-direction:column;
+  }
+
     header .icon{
         display:block;
         position:absolute;
         right: 0;
-        margin-top: 50px;
+        margin: 25px;
         font-size:2.5em;
     }
+
+    header nav.responsive, nav.responsive a{
+      display:flex;
+      flex-direction:column;
+      background-color: red;
+    }
+  }
