@@ -1,23 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Présentation</title>
+    <link rel="stylesheet" href="./template.css">
+    <script src="https://kit.fontawesome.com/6a432ef69a.js" crossorigin="anonymous"></script>
+    <script src="myScripts.js" defer></script>
 </head>
+
 <body>
-    <header>
-        <img src ="jalon 1/images/MCMP.jfif" alt = "Logo MCMP">
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="presentation.html">Présentation de l'association</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="inscription.html">Inscription</a></li>
-                <li><a href="connexion.html">Connexion</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
+    <div id="container">
+        <header>
+            <img src="MCMP.png" width="100px" height="100px" alt="Logo MCMP">
+            <nav id="navbar">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="presentation.html">L'association</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="inscription.html">Inscription</a></li>
+                    <li><a href="connexion.html">Connexion</a></li>
+                </ul>
+            </nav>
+            <a class="icon" onclick="myFunction()">&#9776;</a>
+        </header>
+        <main>
             <ul>
                 <li>
                     <p>Description de l'association</p>
@@ -27,15 +34,23 @@
                 </li>
                 <li>
                     <p>Règlements de l'association</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit architecto numquam cum excepturi et nisi officia aspernatur soluta ad qui ducimus debitis, itaque mollitia, eius laboriosam delectus saepe aperiam ullam.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit architecto numquam cum excepturi
+                        et nisi officia aspernatur soluta ad qui ducimus debitis, itaque mollitia, eius laboriosam
+                        delectus saepe aperiam ullam.</p>
                 </li>
             </ul>
-    </main>
-    <footer>
-        <p>Réseaux sociaux</p>
-        <p>Tous droits réservés &copy; MCMP 2021</p>
-    </footer>
-    
+        </main>
+        <footer>
+            <p>Tous droits réservés &copy; MCMP 2021</p>
+            <div id="rs">
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter-square"></i>
+            </div>
+        </footer>
+    </div>
+
 
 </body>
+
 </html>

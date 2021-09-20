@@ -1,41 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Contact</title>
+    <link rel="stylesheet" href="template.css">
+    <script src="https://kit.fontawesome.com/6a432ef69a.js" crossorigin="anonymous"></script>
+    <script src="myScripts.js" defer></script>
 </head>
+
 <body>
-    <header>
-        <img src ="jalon 1/images/MCMP.jfif" alt = "Logo MCMP">
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="presentation.html">Présentation de l'association</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="inscription.html">Inscription</a></li>
-                <li><a href="connexion.html">Connexion</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-           <h1>Contact</h1>
-           <form action="getform.php" method="get">
-               <label for="#prenom">Votre prénom :</label>
-               <input type="text" id="prenom" required size="20">
-               <label for="#nom">Votre nom : </label>
-               <input type="text" id="nom" required size="20">
-               <label for="#email">Votre email</label>
-               <input type="email" id="email" required size="20">
-               <label for="#message">Votre message</label>
-               <textarea id="message" rows="30" cols="50">votre message ici</textarea>
-               <button>Envoyer</button>
-           </form>
-    </main>
-    <footer>
-        <p>Réseaux sociaux</p>
-        <p>Tous droits réservés &copy; MCMP 2021</p>
-    </footer>
-    
+    <div id="container">
+        <header>
+            <img src="MCMP.png" height="100px" width="100px" alt="Logo MCMP">
+            <nav id="navbar">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="presentation.html">L'association</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="inscription.html">Inscription</a></li>
+                    <li><a href="connexion.html">Connexion</a></li>
+                </ul>
+            </nav>
+            <a class="icon" onclick="myFunction()">&#9776;</a>
+        </header>
+        <main>
+            <h1>Contact</h1>
+            <form action="getform.php" method="get">
+                <label for="#prenom">Votre prénom :</label>
+                <input type="text" id="prenom" required size="20">
+                <label for="#nom">Votre nom : </label>
+                <input type="text" id="nom" required size="20">
+                <label for="#email">Votre email</label>
+                <input type="email" id="email" required size="20">
+                <label for="#message">Votre message</label>
+                <textarea id="message" rows="30" cols="50">votre message ici</textarea>
+                <button>Envoyer</button>
+            </form>
+        </main>
+        <footer>
+            <p>Tous droits réservés &copy; MCMP 2021</p>
+            <div id="rs">
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter-square"></i>
+            </div>
+        </footer>
+    </div>
 
 </body>
+
 </html>
