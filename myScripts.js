@@ -1,5 +1,5 @@
 
-    function myFunction() {
+    function showResponsive() {
         var x = document.getElementById("navbar");
         if (x.className === "nav") {
             x.className += " responsive";
