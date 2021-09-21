@@ -108,6 +108,43 @@ body {
   text-decoration: none;
 }
 
+fieldset {
+  margin: 2em 2em;
+  padding: 1em 2em;
+  border: solid 1px black;
+  border-radius: 6px;
+  min-width: 200px;
+}
+
+legend {
+  font-size: 1.25em;
+  padding: 0 0.25em;
+  color: black;
+}
+
+label {
+  display: block;
+  margin-top: 1em;
+}
+
+label:first-of-type {
+  margin-top: 0;
+}
+
+textarea {
+  width: 80%;
+  height: 80%;
+}
+
+input {
+  padding: 0.5em;
+  border: solid 1px #999;
+}
+
+input[type=email], input[type=text] {
+  width: 15em;
+}
+
 @media (max-width: 950px) {
   #container::after {
     content: "";
