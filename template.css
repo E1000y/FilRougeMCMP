@@ -1,3 +1,49 @@
+/*------code from W3S for dropdown btn-----*/
+.dropbtn {
+  background-color: #3498db;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: #2980b9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+
+/*------end of W3S code for dropdown menu -------------------*/
 header {
   background-color: #000;
   display: grid;
@@ -7,7 +53,6 @@ header {
   position: sticky;
   top: 0px;
 }
-
 header nav ul {
   display: flex;
   justify-content: space-between;
@@ -18,7 +63,7 @@ header nav ul {
   list-style-type: none;
 }
 
-header a {
+.aHeader {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
@@ -30,26 +75,9 @@ header a {
   padding-bottom: 20px;
 }
 
-header .dropdown-1 .content {
+header span.icon {
   display: none;
-}
-
-header .dropdown-1 {
-  position: relative;
-  height: 100%;
-}
-
-header .dropdown-1:hover .content {
-  position: absolute;
-  display: block;
-  width: 300%;
-}
-header .dropdown-1:hover .content a {
-  padding-top: 15px;
-}
-
-header .icon {
-  display: none;
+  color: white;
 }
 
 @media (max-width: 1010px) {
@@ -75,7 +103,7 @@ header .icon {
     margin-bottom: 10px;
   }
 
-  header .icon {
+  header span.icon {
     display: block;
     position: absolute;
     right: 40px;
@@ -97,7 +125,6 @@ header .icon {
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 20px;
-    margin-left: -40px;
     width: 200px;
   }
 }
@@ -105,12 +132,6 @@ header .icon {
   position: relative;
   display: flex;
   align-items: flex-start;
-}
-
-.submenu {
-  background-color: beige;
-  color: black;
-  width: 80%;
 }
 
 footer {
