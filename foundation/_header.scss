@@ -1,14 +1,19 @@
 /*------code from W3S for dropdown btn-----*/
-
+.myDropdown{
+  background-color: blue;
+  height: 40px;
+}
 .dropbtn {
-  background-color: #3498db;
+  background-color: red;
   color: white;
   padding: 16px;
   font-size: 16px;
   border: none;
   cursor: pointer;
 }
-
+.dropdown-btn{
+  background-color: blue;
+}
 .dropbtn:hover,
 .dropbtn:focus {
   background-color: #2980b9;
@@ -21,7 +26,7 @@
 
 .dropdown-content {
   display: none;
-  position: absolute;
+  // position: absolute;
   background-color: #f1f1f1;
   min-width: 160px;
   overflow: auto;
@@ -66,7 +71,6 @@ header {
   }
 }
 
-
 .aHeader {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
@@ -104,11 +108,10 @@ header {
 
 header span.icon {
   display: none;
-  color:white;
+  color: white;
 }
 
 @media (max-width: 1010px) {
-
   .dropdown-content {
     display: none;
     position: absolute;
@@ -117,24 +120,24 @@ header span.icon {
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-    left:-40px;
+    left: -40px;
   }
+  nav{
+    height: 100%;
   }
- 
 
   header {
     padding-left: 40px;
 
     img {
-      display:none;
+      display: none;
     }
 
     li {
       width: 100%;
     }
   }
-
-  
+ 
 
   body div header nav ul {
     display: none;
