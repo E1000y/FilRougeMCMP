@@ -1,0 +1,231 @@
+//--------css pour toute la page ------------
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+//------css pour les images de la première page
+
+.galerie {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 80%;
+  max-width: 130rem;
+  margin: 70px auto 0;
+  background-color: crimson;
+
+  .item {
+    margin: 10px 10px 5px 10px;
+    overflow: hidden;
+
+    img {
+      height: 20rem;
+      width: 30rem;
+    }
+  }
+}
+//------css pour les images des sorties
+
+main{
+  div.sortie{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    
+    img{
+      margin: 1em;
+      max-width: 800px;
+     
+    }
+    table {
+      max-width: 400px;
+      margin: 1em;
+    }
+
+    p{
+      max-width: 400px;
+      margin:1em;
+      
+    }
+    
+
+    table, td, th{
+      border:1px solid black;
+      border-collapse:collapse;
+      font-size: xx-large;
+      
+      @media (min-width :1024px) {
+        font-size: x-large;
+        
+      }
+    }
+  }
+
+  
+}
+
+//------css pour les formulaires -----------
+
+main{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  h1{
+    margin:2em
+  }
+}
+
+main.form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items:center;
+  font-size: 1em;
+  
+  form {
+    display: flex;
+    justify-content: center;
+    fieldset {
+      margin: 2em 2em;
+      padding: 1em 2em;
+      border: solid 3px black;
+      border-radius: 10px;
+      min-width: 400px;
+      width:100%;
+      legend {
+        font-size: 1.25em;
+        padding: 0 0.25em;
+        color: black;
+      }
+
+      label {
+        display: block;
+        margin-top: 1em;
+      }
+
+      label:first-of-type {
+        margin-top: 0;
+      }
+
+      input {
+        padding: 0.5em;
+        border: solid 1px #999;
+      }
+
+      input[type="email"],
+      input[type="text"] {
+        width: 15em;
+      }
+
+      
+    }
+  }
+}
+
+//--------css pour tous les boutons-------
+input[type="submit"] {
+  display: block;
+  right: 20px;
+  padding: 0.5em 1em;
+  margin: 0.5em 1em;
+  border-radius: 6px;
+  background-color: black;
+  color: white;
+  font-size: 1.2em;
+  margin-left: auto;
+  height:50px;
+}
+
+
+//----css pour l'image de fond d'écran -----
+@media (max-width: 1024px) {
+  #container::after {
+    content: "";
+    background-image: url("./MCMP.png");
+    background-repeat: no-repeat;
+    background-size: 700px;
+    background-position: center center;
+    background-attachment: fixed;
+    opacity: 0.25;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    z-index: -1;
+  }
+
+  main.form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items:center;
+    font-size: 3em;
+    
+    form {
+      display: flex;
+      justify-content: center;
+      fieldset {
+        margin: 2em 2em;
+        padding: 1em 2em;
+        border: solid 3px black;
+        border-radius: 10px;
+        min-width: 400px;
+        width:100%;
+        legend {
+          font-size: 1.25em;
+          padding: 0 0.25em;
+          color: black;
+        }
+  
+        label {
+          display: block;
+          margin-top: 1em;
+        }
+  
+        label:first-of-type {
+          margin-top: 0;
+        }
+  
+        input {
+          padding: 0.5em;
+          border: solid 5px #999;
+          
+        }
+  
+        input[type="email"],
+        input[type="text"], 
+        input[type="password"] {
+          width: 30em;
+          height:5vh;
+          font-size: 20px;
+          
+        }
+  
+        input[type="submit"] {
+          display: block;
+          right: 20px;
+          padding: 0.5em 1em;
+          margin: 0.5em 1em;
+          border-radius: 6px;
+          background-color: black;
+          color: white;
+          font-size: 1.2em;
+          margin-left: auto;
+        }
+      }
+    }
+  }
+  
+}

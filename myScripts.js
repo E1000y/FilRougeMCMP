@@ -1,32 +1,38 @@
+// fonction appelé quand on click sur le menu burger
+function clickBurger() {
+    // // get la sidevav
+    // let sidenav = document.getElementsByClassName('sidenav')[0];
+    // // si la sidenav est déja affichée => display: none;
+    // if (sidenav.style.display === "block") {
+    //     sidenav.style.display = "none";
+    // } else {
+    //     // sinon => display: block;
+    //     sidenav.style.display = "block";
+    // }
 
-    function showResponsive() {
-        var x = document.getElementById("navbar");
-        if (x.className === "nav") {
-            x.className += " responsive";
-        }
-        else {
-            x.className = "nav";
-        }
+    //-----code de test pour basculer la deuxième class de sidenav entre show et hide
+    let sidenav2 = document.getElementById('sidenav')
 
-    }
+    sidenav2.classList.toggle('hide');
 
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
+    sidenav2.classList.toggle('show');
 
-function clickableDropdown() {
-    document.getElementById("myDropdown").classList.toggle("show");
-  }
 
-    // Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-      var dropdowns = document.getElementsByClassName("dropdown-content");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
-        }
-      }
-    }
-  }
+
+}
+
+// var dropdown = document.getElementsByClassName("dropdown-btn");
+
+
+// for (let i = 0; i < dropdown.length; i++) {
+//     dropdown[i].addEventListener("click", function () {
+//         this.classList.toggle("active");
+//         var dropdownContent = this.nextElementSibling;
+//         if (dropdownContent.style.display === "block") {
+//             dropdownContent.style.display = "none";
+//         } else {
+//             dropdownContent.style.display = "block";
+//         }
+//     });
+// }
+

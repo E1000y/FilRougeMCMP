@@ -1,62 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <title>Inscription</title>
     <link rel="stylesheet" href="template.css">
-    <script src="https://kit.fontawesome.com/6a432ef69a.js" crossorigin="anonymous"></script>
     <script src="myScripts.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/6a432ef69a.js" crossorigin="anonymous"></script>
+
+    <title>Sidebar menu</title>
+</head>
+<body>
+    <header>
+        <img src="MCMP.png">
+        <div id="sidenav" class= "hide">
+            <a href="index.html">Accueil</a>
+            <a href="presentation.html">L'association</a>
+            <!-- <button class="dropdown-btn">Sorties 
+              <i class="fa fa-caret-down"></i>
+            </button> -->
+            <!-- <div class="dropdown-container"> -->
+              <a href="sorties-passees.html">Sorties passées</a>
+              <a href="sorties-a-venir.html">Sorties à venir</a>
+            <!-- </div> -->
+            <a href="contact.html">Contact</a>
+            <a href="inscription.html">Inscription</a>
+            <a href="connexion.html">Connexion</a>
+          </div>
+          
+
+
+    </header>
+    <span id="burger" onclick="clickBurger()">&#9776;</span>
+    <main class="form">
+        <h1 style="display:none">Inscription</h1>
+        <form id="connexion" method="post">
+            <fieldset>
+                <legend>Inscription</legend>
+                <label for="#email">Email</label>
+                <input type="email" id="email" required size=10>
+                <label for="#login">Login adhérent</label>
+                <input type="text" id="login" required size=10>
+                <label for="#mdp">Mot de passe</label>
+                <input type="password" id="mdp" size=10>
+                <label for="#mdp-v">Vérification du mot de passe</label>
+                <input type="password" id="mdp-v" size=10>
+                <input type="submit">
+            </fieldset>
+        </form>
+    <footer>
+        <p>Tous droits réservés &copy; MCMP 2021</p>
+        <div id="rs">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter-square"></i>
+        </div>
+    </footer>
     
-    </head>
-
-        <body>
-            <div id="container">
-                <header>
-                    <img src="MCMP.png" height="100px" width="100px" alt="Logo MCMP">
-                    <nav id="navbar">
-                    <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="presentation.html">L'association</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="inscription.html">Inscription</a></li>
-                    <li><a href="connexion.html">Connexion</a></li>
-                    </ul>
-                    
-                    </nav>
-
-                    <a class ="icon" onclick="showResponsive()">&#9776; </a>
-                </header>
-                <main>
-
-                    <main>
-                        <form id="connexion" method="post">
-                            <fieldset>
-                                <legend>Connexion</legend>
-                                <label for="#email">Email</label>
-                                <input type="email" id="email" required size=10>
-                                <label for="#login">Login adhérent</label>
-                                <input type="text" id="login" required size=10>
-                                <label for="#mdp">Mot de passe</label>
-                                <input type="password" id="mdp" size=10>
-                                <label for="#mdp-v">Vérification du mot de passe</label>
-                                <input type="password" id="mdp-v" size=10>
-                                <button>Envoyer</button>
-                            </fieldset>
-                        </form>
-
-                </main>
-                <footer>
-                    <p>Tous droits réservés &copy; MCMP 2021</p>
-                    <div id="rs">
-                        <i class="fab fa-facebook-square"></i>
-                        <i class="fab fa-instagram"></i>
-                        <i class="fab fa-twitter-square"></i>
-                    </div>
-                </footer>
-            </div>
-
-
-        </body>
-
-</html >
+</body>
+</html>
